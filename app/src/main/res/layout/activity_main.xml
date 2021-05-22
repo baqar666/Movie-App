@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="#1E1C1C">
+    android:background="#1E1C1C"
+    >
 
     <com.google.android.flexbox.FlexboxLayout
         android:layout_width="match_parent"
@@ -68,8 +69,8 @@
         android:id="@+id/show_picture"
         app:alignItems="center"
         app:justifyContent="space_between"
-        >
 
+        >
     </com.google.android.flexbox.FlexboxLayout>
     </ScrollView>
 

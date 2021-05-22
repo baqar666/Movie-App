@@ -3,6 +3,7 @@ package com.example.mid_term_project;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.icu.lang.UCharacter;
@@ -14,6 +15,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -67,8 +69,18 @@ public class MainActivity extends AppCompatActivity {
             textView[i].setTextSize(20);
             linearLayout[i].addView(imageButton[i]);
             linearLayout[i].addView(textView[i]);
-
-
+            onClickListener(imageButton[i],i);
         }
     }
+    void onClickListener(ImageButton imageButton, int i){
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"Good hogya g",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this , Movie_detail.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 }
