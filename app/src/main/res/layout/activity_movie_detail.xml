@@ -15,12 +15,14 @@
         android:orientation="vertical">
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="200dp"
+        android:id="@+id/framlayout">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:src="@drawable/lucifer"
         android:scaleType="centerCrop"
+        android:id="@+id/coverphoto"
         />
         <View
             android:layout_width="match_parent"
@@ -43,12 +45,14 @@
             >
         <ImageView
             android:layout_width="150dp"
-            android:layout_height="170dp"
+            android:layout_height="200dp"
             android:src="@drawable/lucifer"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:id="@+id/movie_picture"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/movie_title"
                 android:text="Lucifer"
                 android:textSize="35px"/>
         </LinearLayout>
@@ -66,18 +70,21 @@
                 android:layout_height="wrap_content"
                 android:text="Lucifer"
                 android:textSize="35px"
+                android:id="@+id/movie_name"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20014 - Netflix Series"
                 android:textSize="35px"
+                android:id="@+id/release_year"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8.2 Imbd"
                 android:textSize="35px"
+                android:id="@+id/movie_rating"
                 />
         </LinearLayout>
 
@@ -85,17 +92,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/textView_moreButton">
         <TextView
+            android:padding="20px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
+            android:id="@+id/movie_detail"
+            android:ellipsize="end"
+            android:maxLines="3"
             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="More"
+            android:text="Open"
+
+            android:id="@+id/detail_more_btn"
             android:layout_marginTop="10dp"/>
     </LinearLayout>
 
@@ -111,22 +124,26 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Director"
+                android:text="Director : "
+                android:textSize="25px"
+                android:id="@+id/movie_director_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Studio :"
+                android:textSize="25px"
+                android:id="@+id/movie_studio"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genre :"
+                android:id="@+id/movie_genre"
                 android:textSize="25px"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Studio"
-                android:textSize="25px"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Genre"
-                android:textSize="25px"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Video"
+                android:text="Video :"
+                android:id="@+id/movie_video"
                 android:textSize="25px"/>
         </LinearLayout>
     </LinearLayout>

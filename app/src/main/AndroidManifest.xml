@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mid_term_project">
-        <activity android:name=".Movie_detail"></activity>
+        <activity android:name=".drawer"></activity>
+        <activity android:name=".Movie_detail" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

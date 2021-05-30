@@ -34,6 +34,7 @@
 
             android:textSize="20dp"
             />
+
         <com.google.android.flexbox.FlexboxLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,8 +46,10 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_baseline_search_24"
                 android:background="#3C3737"
+                android:id="@+id/search"
                 android:paddingLeft="10dp"
                 />
+
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -68,10 +71,23 @@
         app:flexWrap="wrap"
         android:id="@+id/show_picture"
         app:alignItems="center"
-        app:justifyContent="space_between"
-
+        app:justifyContent="space_around"
         >
+
+
+
+
     </com.google.android.flexbox.FlexboxLayout>
     </ScrollView>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progressBar"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:layout_marginTop="200dp"
+         />
 
 </LinearLayout>
